@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
 
 :root {
   font-size: 65%;
@@ -12,7 +12,7 @@
   outline: none;
 }
 
-header,
+body > header,
 main,
 footer {
   margin: 1vh 3vw 0;
@@ -96,6 +96,7 @@ header > img {
 
 .prep-detail span {
   margin-right: 0.5rem;
+  color: #4f4f4f;
 }
 
 .prep-detail small {
@@ -113,10 +114,6 @@ header > img {
 
   color: #333333;
 }
-
-/* .ingredients{
-
-} */
 
 .ingredients h2 {
   font-size: 2.5rem;
@@ -225,4 +222,50 @@ footer p {
   font-size: 1.4rem;
   text-align: center;
   color: #a7a7a7;
+}
+
+@media screen and (min-width: 736px) {
+  .recipe-info:nth-child(0) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  body > header,
+  main,
+  footer {
+    margin: 2vh 20vw 0;
+  }
+
+  .recipe-intro {
+    justify-content: flex-start;
+  }
+
+  .recipe-intro img {
+    margin-right: 20px;
+  }
+
+  .recipe-intro p {
+    width: 60%;
+  }
+
+  .recipe-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .prep-time-container {
+    flex-direction: column;
+  }
+
+  .prep-detail {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .ingredients {
+    width: 80%;
+  }
 }
