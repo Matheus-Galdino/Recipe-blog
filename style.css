@@ -9,4 +9,220 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+header,
+main,
+footer {
+  margin: 1vh 3vw 0;
+}
+
+header h1 {
+  font-family: "Playfair Display";
+  font-size: 3.5rem;
+}
+
+.recipe-intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.recipe-intro img {
+  height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.recipe-intro p {
+  width: 85%;
+
+  font-size: 1.6rem;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+
+  color: #4f4f4f;
+}
+
+header > img {
+  width: 100%;
+}
+
+.servings-container {
+  display: flex;
+
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.servings-container span {
+  color: #f2994a;
+
+  margin-right: 0.5rem;
+}
+
+.servings-container small {
+  font-size: 1rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+
+  color: #bdbdbd;
+}
+
+.servings-container p {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+
+  color: #f2994a;
+}
+
+.prep-time-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 4rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.prep-time-container .prep-detail {
+  display: flex;
+}
+
+.prep-detail span {
+  margin-right: 0.5rem;
+}
+
+.prep-detail small {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1rem;
+
+  color: #bdbdbd;
+}
+
+.prep-detail p {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  color: #333333;
+}
+
+/* .ingredients{
+
+} */
+
+.ingredients h2 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display";
+  font-weight: bold;
+
+  color: #333333;
+
+  margin-bottom: 2rem;
+}
+
+.ingredients h3 {
+  font-size: 2.4rem;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: normal;
+
+  color: #333333;
+
+  margin-bottom: 2rem;
+}
+
+.checkbox-ingredients {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.checkbox-ingredients input {
+  margin-right: 1rem;
+
+  width: 2rem;
+  height: 2rem;
+}
+
+.checkbox-ingredients p {
+  width: 90%;
+
+  font-size: 1.7rem;
+  font-family: "Montserrat";
+}
+
+.ingredients div + h3 {
+  margin-top: 4rem;
+}
+
+.instructions h2 {
+  font-size: 2.9rem;
+  font-family: "Playfair Display";
+  font-weight: bold;
+
+  margin: 2rem 0;
+}
+
+.instructions div {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.instructions small {
+  font-size: 2.2rem;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  text-align: center;
+
+  border-radius: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  background: #f2994a;
+  color: white;
+
+  margin-right: 1rem;
+}
+
+.instructions p {
+  width: 80%;
+
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+}
+
+.instructions strong {
+  color: #333333;
+}
+
+.source {
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  font-style: italic;
+
+  color: #a5a5a5;
+}
+
+.source:hover {
+  color: #333333;
+}
+
+footer {
+  margin-top: 7rem;
+  padding-bottom: 1.5rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #a7a7a7;
 }
